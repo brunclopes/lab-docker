@@ -1,0 +1,9 @@
+FROM bitnami/spark:latest
+
+USER root
+
+RUN pip install delta-spark==2.1.0 \
+	pip install pandas \
+	pip install minio \
+	pip install requests \
+	pip install yfinance 
